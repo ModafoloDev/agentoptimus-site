@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The agent governance gap checklist — Agent Optimus</title>
+<meta name="description" content="Ten questions to run against your own AI-coding setup. Each paired with what counts as proof — and the common answer that only looks like proof. Free, no signup.">
+<meta name="robots" content="index,follow">
+<meta property="og:type" content="article">
+<meta property="og:title" content="The agent governance gap checklist">
+<meta property="og:description" content="Ten questions to run against your own AI-coding setup. If you can't produce the artifact, you don't have the control — you have a habit.">
+<meta property="og:url" content="https://agentoptimus.modafolo.com/checklist">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The agent governance gap checklist">
+<meta name="twitter:description" content="Ten questions to run against your own AI-coding setup. Free, no signup.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230d0f12'/%3E%3Cpath d='M28 68 L50 30 L72 68' stroke='%236ee7a8' stroke-width='9' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  :root{
+    --bg:#0d0f12; --panel:#14171c; --line:#262b33;
+    --text:#e8eaed; --dim:#949aa5; --accent:#6ee7a8; --warn:#f0b866; --red:#f08a8a;
+  }
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    line-height:1.5;-webkit-font-smoothing:antialiased}
+  .mono{font-family:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace}
+  .shell{max-width:1000px;margin:0 auto;padding:0 24px}
+  a{color:inherit}
+
+  nav{border-bottom:1px solid var(--line)}
+  .navin{display:flex;align-items:center;justify-content:space-between;padding:16px 0;gap:16px;flex-wrap:wrap}
+  .brand{font-size:13px;letter-spacing:.14em;font-weight:600;text-decoration:none}
+  .brand span{color:var(--dim);font-weight:400}
+  .navcta{font-size:12px;color:var(--accent);border:1px solid var(--line);padding:7px 13px;border-radius:6px;text-decoration:none}
+  .navcta:hover{border-color:var(--accent)}
+
+  header{padding:52px 0 34px;border-bottom:1px solid var(--line)}
+  .eyebrow{font-size:10.5px;letter-spacing:.18em;color:var(--dim);text-transform:uppercase;margin-bottom:16px}
+  h1{font-size:clamp(26px,4.4vw,36px);line-height:1.14;font-weight:600;letter-spacing:-.02em;margin:0 0 14px}
+  .lede{font-size:15px;line-height:1.68;color:var(--dim);margin:0;max-width:68ch}
+
+  .legend{display:grid;grid-template-columns:1.5fr 1.1fr 1.1fr;gap:16px;padding:12px 0;
+    border-bottom:1px solid var(--line);background:var(--panel)}
+  .lg{font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim)}
+  .lg.p{color:var(--accent)} .lg.f{color:var(--red)}
+  .legwrap{background:var(--panel);border-bottom:1px solid var(--line)}
+
+  .sec{padding:24px 0 8px;font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--warn)}
+  .row{display:grid;grid-template-columns:1.5fr 1.1fr 1.1fr;gap:16px;padding:15px 0;
+    border-bottom:1px solid var(--line);align-items:start}
+  .q{font-size:13.5px;line-height:1.5;font-weight:500}
+  .num{color:var(--dim);font-size:11px;margin-right:8px}
+  .p{font-size:12px;line-height:1.55;color:var(--accent)}
+  .f{font-size:12px;line-height:1.55;color:var(--red);font-style:italic}
+
+  .foot{border-top:1px solid var(--line);background:var(--panel);margin-top:8px}
+  .footin{padding:36px 0}
+  .fttl{font-size:19px;font-weight:600;margin:0 0 10px}
+  .fsub{font-size:13.5px;color:var(--dim);margin:0 0 22px;line-height:1.65;max-width:64ch}
+  .cta{display:inline-block;padding:12px 20px;border-radius:6px;background:var(--accent);
+    color:#07130d;font-weight:600;font-size:13.5px;text-decoration:none}
+  .cta:hover{filter:brightness(1.08)}
+
+  footer{border-top:1px solid var(--line);padding:22px 0;font-size:11.5px;color:var(--dim)}
+  .fin{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+
+  @media(max-width:700px){
+    .legwrap{display:none}
+    .row{grid-template-columns:1fr;gap:7px}
+    .p::before{content:"PROOF — ";font-weight:700}
+    .f::before{content:"NOT PROOF — ";font-weight:700;font-style:normal}
+  }
+</style>
+</head>
+<body>
+
+<nav><div class="shell navin">
+  <a class="brand mono" href="/">AGENT&nbsp;OPTIMUS <span>/ checklist</span></a>
+  <a class="navcta mono" href="mailto:support@modafolo.com?subject=Governance%20gap%20-%20checklist">Tell me which line hurt</a>
+</div></nav>
+
+<header><div class="shell">
+  <div class="eyebrow mono">Free · no signup · no email required</div>
+  <h1>The agent governance gap checklist</h1>
+  <p class="lede">Ten questions to run against your own setup. If you can&rsquo;t produce the artifact in the middle column, you don&rsquo;t have the control — you have a habit. The right column lists the answers that feel like proof and aren&rsquo;t.</p>
+</div></header>
+
+<div class="legwrap"><div class="shell legend">
+  <div class="lg">Question</div>
+  <div class="lg p">What counts as proof</div>
+  <div class="lg f">What doesn&rsquo;t</div>
+</div></div>
+
+<main class="shell">
+
+  <h2 class="sec mono">1 · Permission &amp; blast radius</h2>
+  <div class="row">
+    <div class="q"><span class="num mono">01</span>For a given agent run, can you enumerate what it was allowed to touch — <em>before</em> it ran?</div>
+    <div class="p">A per-run allowlist stored with the run record.</div>
+    <div class="f">&ldquo;It only had the repo we opened.&rdquo;</div>
+  </div>
+  <div class="row">
+    <div class="q"><span class="num mono">02</span>Can an agent reach a credential it was never granted?</div>
+    <div class="p">A run where an unauthorized read actually fails.</div>
+    <div class="f">&ldquo;Secrets are in .env, so it&rsquo;s fine.&rdquo;</div>
+  </div>
+
+  <h2 class="sec mono">2 · Evidence &amp; attestation</h2>
+  <div class="row">
+    <div class="q"><span class="num mono">03</span>For a merged AI-authored change, can you reproduce the evidence that gated it?</div>
+    <div class="p">Stored artifacts bound to the commit SHA.</div>
+    <div class="f">&ldquo;CI was green.&rdquo;</div>
+  </div>
+  <div class="row">
+    <div class="q"><span class="num mono">04</span>Can you prove that evidence wasn&rsquo;t altered after the decision?</div>
+    <div class="p">Content digest, ideally hash-chained.</div>
+    <div class="f">&ldquo;It&rsquo;s in our audit log.&rdquo;</div>
+  </div>
+  <div class="row">
+    <div class="q"><span class="num mono">05</span>Can you attest which model <em>and which vendor</em> served each request?</div>
+    <div class="p">Recorded model ID plus provider request ID.</div>
+    <div class="f">&ldquo;The model is set in config.&rdquo;</div>
+  </div>
+
+  <h2 class="sec mono">3 · Data egress</h2>
+  <div class="row">
+    <div class="q"><span class="num mono">06</span>Do you know every network destination a run contacted?</div>
+    <div class="p">A per-run egress log, default-deny.</div>
+    <div class="f">&ldquo;It only talks to the model API.&rdquo;</div>
+  </div>
+  <div class="row">
+    <div class="q"><span class="num mono">07</span>With egress blocked, does the run fail closed — or quietly degrade?</div>
+    <div class="p">An executed run under deny-by-default.</div>
+    <div class="f">&ldquo;We could block it at the firewall.&rdquo;</div>
+  </div>
+
+  <h2 class="sec mono">4 · Separation of duties</h2>
+  <div class="row">
+    <div class="q"><span class="num mono">08</span>Is the thing that authors a change ever the thing that approves it?</div>
+    <div class="p">Distinct enforced identities, not convention.</div>
+    <div class="f">&ldquo;A human reviews the PR.&rdquo;</div>
+  </div>
+  <div class="row">
+    <div class="q"><span class="num mono">09</span>Can the agent edit the tests that gate its own work?</div>
+    <div class="p">A policy that blocks it — with a test proving the block.</div>
+    <div class="f">&ldquo;We&rsquo;d notice in review.&rdquo;</div>
+  </div>
+
+  <h2 class="sec mono">5 · Cost &amp; runaway</h2>
+  <div class="row">
+    <div class="q"><span class="num mono">10</span>Is there a ceiling that <em>stops</em> a run, or a dashboard that reports one?</div>
+    <div class="p">A run observed terminating at the limit.</div>
+    <div class="f">&ldquo;We have billing alerts.&rdquo;</div>
+  </div>
+
+</main>
+
+<section class="foot"><div class="shell footin">
+  <p class="fttl">Answered &ldquo;we&rsquo;d notice&rdquo; to more than two?</p>
+  <p class="fsub">That&rsquo;s the gap. It is also the thing that gets expensive the first time somebody outside your team asks you to prove it. Agent Optimus is being built against exactly this list — and it does not yet clear all ten itself. Tell me which line hurt.</p>
+  <a class="cta mono" href="mailto:support@modafolo.com?subject=Governance%20gap%20-%20checklist">support@modafolo.com</a>
+</div></section>
+
+<footer><div class="shell fin">
+  <span><a href="/">Agent Optimus</a> — in development</span>
+  <span class="mono">support@modafolo.com</span>
+</div></footer>
+
+</body>
+</html>
